@@ -576,6 +576,7 @@ template {
 
 .search {
   font-size: 0.8125rem;
+  color: #ffffff;
 }
 .search:hover {
   color: #fbff3d;
