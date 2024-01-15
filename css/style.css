@@ -824,6 +824,11 @@ template {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .product__title.active {
+    font-size: 1.24rem;
+  }
+}
 
 .product__description {
   width: 15.125rem;
@@ -1079,7 +1084,7 @@ input[type=number]:focus {
 }
 .preferences__checkbox.active {
   position: absolute;
-  top: calc(50dvh - 13.125rem);
+  top: calc(50dvh - 17.75rem);
   left: calc(50vw + 7.1875rem);
 }
 
@@ -1089,7 +1094,7 @@ input[type=number]:focus {
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   position: absolute;
-  top: 0;
+  top: -4.5625rem;
   left: -250rem;
   z-index: 1000;
 }
