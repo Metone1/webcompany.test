@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webcompany.by</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__top">
+            <div class="header__topLeft">
+              <div class="header__burger burger">
+                <span class="burger-icon"></span>
+                <input class="burger__checkbox" type="checkbox" />
+                <ul class="burger-menu__list">
+                  <li class="burger-menu__item">
+                    <a href="#!" class="burger-menu__link"
+                      >мобильные телефоны</a
+                    >
+                  </li>
+                  <li class="burger-menu__item">
+                    <a href="#!" class="burger-menu__link">планшеты</a>
+                  </li>
+                  <li class="burger-menu__item">
+                    <a href="#!" class="burger-menu__link">фототехника</a>
+                  </li>
+                  <li class="burger-menu__item">
+                    <a href="#!" class="burger-menu__link">ноутбуки</a>
+                  </li>
+                  <li class="burger-menu__item">
+                    <a href="#!" class="burger-menu__link">телевизоры</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__logo">
+                <a href="#!" class="logo">логотип</a>
+              </div>
+              <div class="header__contact">
+                <a href="tel:88002225460" class="contacts__tel">
+                  <p>8 800 777-50-50</p>
+                </a>
+              </div>
+              <div class="header__search">
+                <form class="search__place">
+                  <input type="text" placeholder="Поиск товаров" />
+                  <button type="submit">
+                    <i id="desktop__search" class="fa-solid fa-magnifying-glass search"></i>
+                    <i id="mobile-first__search" class="fa-solid fa-magnifying-glass search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="header__topRight">
+              <a href="#!" class="del-pay">Доставка и оплата</a>
+              <div class="header__basket">
+              <i class="fa-solid fa-cart-shopping"></i>
+                <p>Корзина</p>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a href="#!" class="header-menu__link">мобильные телефоны</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="#!" class="header-menu__link">планшеты</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="#!" class="header-menu__link">фототехника</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="#!" class="header-menu__link">ноутбуки</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="#!" class="header-menu__link">телевизоры</a>
+              </li>
+            </ul>
+          </div>
+          <div id="mobile__search" class="header__search mobile-first">
+            <form class="search__place mobile-first">
+              <input type="text" placeholder="Поиск товаров" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__container _container">
+          <div class="main__selection">
+            <div class="main__selection-leftBlock">
+            <div class="logo__select select">
+              <input class="select__input" type="hidden" name="" />
+              <div class="select__head">Любого логотипа</div>
+              <ul class="select__list" style="display: none">
+                <img
+                  class="select__line"
+                  src="./images/select_line.svg"
+                  alt="line"
+                />
+                <li class="select__item">Компакт-камера</li>
+                <li class="select__item">Беззеркальная</li>
+                <li class="select__item">Зеркальная</li>
+                <li class="select__item">Среднеформатная</li>
+              </ul>
+            </div>
+            <div class="brand__select select">
+              <input class="select__input" type="hidden" name="" />
+              <div class="select__head">Любого бренда</div>
+              <ul class="select__list" style="display: none">
+                <img
+                  class="select__line"
+                  src="./images/select_line.svg"
+                  alt="line"
+                />
+                <li class="select__item">Canon</li>
+                <li class="select__item">Nikon</li>
+                <li class="select__item">Sony</li>
+                <li class="select__item">Fujifilm</li>
+                <li class="select__item">Samsung</li>
+                <li class="select__item">Olympus</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__selection-rightBlock">
+            <div class="main__cost-block">
+              <p class="cost-text">по цене</p>
+              <div class="cost-min">
+                <p>от</p>
+                <input
+                  class="inputMin"
+                  type="number"
+                  placeholder="000 500"
+                  min="0"
+                  step="10000"
+                />
+              </div>
+              <div class="cost-max">
+                <p>до</p>
+                <input
+                  class="inputMax"
+                  type="number"
+                  placeholder="000 000 25"
+                  min="0"
+                  step="10000"
+                />
+              </div>
+              <p class="cost-text">рублей</p>
+            </div>
+          </div>
+          </div>
+          <div class="main__preferences">
+            <div class="preferences-title">Фототехника</div>
+            <div class="preferences-button">
+              <input class="preferences__checkbox" type="checkbox" />
+              <img src="./images/preferences.svg" alt="pref" />
+            </div>
+            <div class="preferences__menu">
+              <div class="preferences__popup popup">
+                <i class="fa-solid fa-xmark popup__close"></i>
+                <div class="popup__top">
+                  <div id="popup__logo" class="logo__select select">
+                    <input class="select__input" type="hidden" name="" />
+                    <div class="select__head">Любого логотипа</div>
+                    <ul class="select__list" style="display: none">
+                      <img
+                        class="select__line"
+                        src="./images/select_line.svg"
+                        alt="line"
+                      />
+                      <li class="select__item">Компакт-камера</li>
+                      <li class="select__item">Беззеркальная</li>
+                      <li class="select__item">Зеркальная</li>
+                      <li class="select__item">Среднеформатная</li>
+                    </ul>
+                  </div>
+                  <div id="popu__brand" class="brand__select select">
+                    <input class="select__input" type="hidden" name="" />
+                    <div class="select__head">Любого бренда</div>
+                    <ul class="select__list" style="display: none">
+                      <img
+                        class="select__line"
+                        src="./images/select_line.svg"
+                        alt="line"
+                      />
+                      <li class="select__item">Canon</li>
+                      <li class="select__item">Nikon</li>
+                      <li class="select__item">Sony</li>
+                      <li class="select__item">Fujifilm</li>
+                      <li class="select__item">Samsung</li>
+                      <li class="select__item">Olympus</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="popup__bottom">
+                  <div class="popup__cost-block">
+                    <div class="cost-min">
+                      <p>от</p>
+                      <input
+                        class="inputMin"
+                        type="number"
+                        placeholder="000 500"
+                        min="0"
+                        step="10000"
+                      />
+                    </div>
+                    <div class="cost-max">
+                      <p>до</p>
+                      <input
+                        class="inputMax"
+                        type="number"
+                        placeholder="000 000 25"
+                        min="0"
+                        step="10000"
+                      />
+                    </div>
+                    <button class="popup__button">применить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__product product">
+            <div class="product-block active">
+              <div class="product__img active">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <div class="product__description-block active">
+                <h2 class="product__title active">
+                  Canon EOS 5D Mark III Body
+                </h2>
+                <p class="product__description active">
+                  Полнокадровая цифровая зеркальная камера, предназначенная для
+                  опытных любителей профессиональных фотографов и
+                  видеооператоров. Преемник успешной модели EOS 5D Mark II.
+                  Фотоаппарат имеет 22.3 Мп. CMOS-сенсор размером 36х24 мм,
+                  14-битный процессор DIGIC 5+, 61-точечный автофокус.
+                </p>
+                <div class="product__cost active">4 400,00 руб.</div>
+                <img
+                  class="product__line active"
+                  src="./images/product_line.svg"
+                  alt="product_line"
+                />
+                <div class="product__sale active">
+                  <p>3 200,00 руб.</p>
+                  <i
+                    class="fa-solid fa-cart-shopping product__basket active"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+            <div class="product-block">
+              <div class="product__img">
+                <img src="./images/product.svg" alt="product1" />
+              </div>
+              <h2 class="product__title">Canon EOS 5D Mark III Body</h2>
+              <p class="product__description">
+                Полнокадровая цифровая зеркальная камера, предназначенная для
+                опытных любителей профессиональных фотографов и видеооператоров.
+                Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3
+                Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+,
+                61-точечный автофокус.
+              </p>
+              <div class="product__cost">4 400,00 руб.</div>
+              <img
+                class="product__line"
+                src="./images/product_line.svg"
+                alt="product_line"
+              />
+              <div class="product__sale">
+                <p>3 200,00 руб.</p>
+                <i class="fa-solid fa-cart-shopping product__basket"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8f40d4dfda.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

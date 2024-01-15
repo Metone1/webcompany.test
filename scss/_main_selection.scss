@@ -1,0 +1,143 @@
+.main__selection {
+  display: flex;
+  column-gap: 0.875rem;
+  align-items: center;
+  color: #484848;
+  padding: 1.5625rem 5.375rem 1.4375rem;
+
+  @media (max-width: $breakpoint1170) {
+    flex-direction: column;
+    row-gap: 0.875rem;
+  }
+
+  @media (max-width: $breakpoint1024) {
+    display: none;
+  }
+}
+
+.main__selection-leftBlock {
+  display: flex;
+  column-gap: 0.875rem;
+}
+
+.select {
+  position: relative;
+  display: block;
+  width: 16.5rem;
+  height: 3rem;
+  z-index: 1;
+}
+
+.select__head {
+  cursor: pointer;
+  width: inherit;
+  height: inherit;
+  padding: 0.8125rem 0 0.8125rem 1.0625rem;
+  color: #484848;
+  border: 1px solid #d0d0d0;
+  background: #ffffff;
+  appearance: none;
+  background-image: url(../images/caret-down\ 1.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: right 1.125rem top 50%, 0 0;
+  background-size: 0.8125rem 0.75rem;
+
+  &.open {
+    border-bottom: 0;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.select__line {
+  position: absolute;
+  top: 2.8125rem;
+  left: 1.0625rem;
+}
+
+.select__list {
+  display: none;
+  background: #ffffff;
+  z-index: 100;
+  color: #484848;
+  border: 1px solid #d0d0d0;
+  border-top: 0;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.select__list .select__item {
+  padding: 0.4375rem 1rem;
+  cursor: pointer;
+}
+
+.select__list .select__item:hover {
+  background: #e8eeff;
+}
+
+.select__list:last-child {
+  padding-bottom: 0.625rem;
+}
+
+////////////////=============cost=============///////////////////
+
+.main__cost-block {
+  display: flex;
+  align-items: center;
+  padding-left: 0.25rem;
+  color: #484848;
+
+  & .cost-text {
+    text-transform: uppercase;
+    padding-right: 0.875rem;
+    padding-left: 0.5625rem;
+  }
+
+  @media (max-width: $breakpoint1170) {
+    padding-left: 0;
+    position: relative;
+    left: -0.25rem;
+    top: 0;
+  }
+}
+
+.cost-min,
+.cost-max {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8.25rem;
+  height: 3rem;
+  box-sizing: border-box;
+  padding: 0.75rem;
+
+  & p {
+    padding-right: 0.3125rem;
+  }
+}
+
+.cost-min {
+  border: 1px solid #d0d0d0;
+}
+.cost-max {
+  border: 1px solid #d0d0d0;
+}
+.inputMin,
+.inputMax {
+  font-weight: 700;
+  color: #484848;
+  width: 100%;
+  border: none;
+  direction: rtl;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:focus {
+  outline: none;
+}

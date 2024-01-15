@@ -1,0 +1,130 @@
+.main__preferences {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  display: none;
+
+  @media (max-width: $breakpoint1024) {
+    display: flex;
+    position: relative;
+  }
+}
+.preferences-title {
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+}
+
+.preferences-button {
+  z-index: 1001;
+  width: 1.375rem;
+  height: 1.375rem;
+
+  & img {
+    vertical-align: baseline;
+  }
+}
+
+.preferences__checkbox {
+  opacity: 0;
+  position: absolute;
+  top: 0.4375rem;
+  right: 0.9375rem;
+  width: 2rem;
+  height: 2rem;
+
+  &.active {
+    position: absolute;
+    top: calc(50dvh - 13.125rem);
+    left: calc(50vw + 7.1875rem);
+  }
+}
+
+.preferences__menu {
+  width: 100vw;
+  height: 100dvh;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: -250rem;
+  z-index: 1000;
+
+  &.active {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+//=============popup===========//
+
+.preferences__popup {
+  width: 280px;
+  height: 356px;
+  background: #fff;
+  position: absolute;
+  top: calc(50dvh - 11.125rem);
+  left: calc(50vw - 8.75rem);
+  box-sizing: border-box;
+  padding: 1.3125rem 1.125rem 1.1875rem;
+}
+
+.popup__close {
+  position: absolute;
+  height: 1.1875rem;
+  width: 1.1875rem;
+  font-size: 1.6875rem;
+  top: -1.8125rem;
+  right: 0;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+    color: #a0a0a0;
+  }
+}
+
+.popup__top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.1875rem;
+  align-items: center;
+  margin-bottom: 1.1875rem;
+}
+
+#popup__logo,
+#popu__brand {
+  width: 15.25rem;
+  height: 3rem;
+  z-index: 100;
+}
+
+#popup__logo {
+  z-index: 101;
+}
+
+.popup__cost-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.1875rem;
+  width: 15.25rem;
+
+  & .cost-min,
+  .cost-max {
+    width: inherit;
+  }
+}
+
+.popup__button {
+  border-radius: 1px;
+  background: #ff3d3d;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.875rem 0 0.8125rem;
+
+  &:hover {
+    background: #ce2929;
+  }
+}
