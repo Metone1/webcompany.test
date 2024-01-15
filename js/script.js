@@ -58,6 +58,12 @@ preferencesCheckbox.addEventListener('click', function () {
 const searchBtn = document.querySelector('#mobile-first__search');
 const searchMobile = document.querySelector('#mobile__search');
 searchBtn.addEventListener('click', function (){
-    searchBtn.classList.toggle('active')
-    searchMobile.classList.toggle('active')
+    if( searchBtn.classList.contains('active')){
+        searchBtn.classList.remove('active')
+        searchMobile.classList.remove('active')
+    }
+    else{
+        searchBtn.classList.add('active')
+        searchMobile.classList.add('active')
+    }
 })
